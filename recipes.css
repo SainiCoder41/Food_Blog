@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #fff8e6; /* Soft beige background */
+    color: #4b2e1e; /* Warm dark brown for text */
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 700;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #fefae0; /* Light cream header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav a {
+    color: #2e8f9c; /* Earthy green links for emphasis */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-radius: 10px;
+    border: 1px solid #6a994e; /* Green border on hover */
+    background-color: rgba(49, 143, 150, 0.1); /* Light green background */
+}
+
+.search-part {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    height: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 300px;
+    padding: 0 15px;
+    border: 1px solid #d9d9d9; /* Light gray border */
+    background-color: #ffffff; /* White background */
+    color: #4b2e1e; /* Warm dark brown text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search:focus {
+    border-color: #237faa; /* Orange border on focus */
+    box-shadow: 0 0 5px rgba(33, 109, 160, 0.5); /* Glow effect */
+    outline: none;
+}
+
+.search::placeholder {
+    font-weight: 700;
+    color: #aaa; /* Soft gray placeholder */
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(231, 178, 80);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.hero-part {
+    background-image: url(./img/hh4.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: #2e8f9c; /* Earthy green links for emphasis */
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    height: 30rem;
+}
+
+.hero-content {
+    text-align: center;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-search button {
+    margin-left: 10px;
+    font-size: 20px;
+    border: 1px solid #aaa;
+    background-color: #aaa;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.hero-search button:hover {
+    color: #4b2e1e; /* Warm dark brown text */
+    box-shadow: 0 0 5px rgba(33, 109, 160, 0.5); /* Glow effect */
+}
+
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    height: 230px;
+    margin-left: 50px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dish_content {
+    margin-left: 30px;
+}
+.img_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dish_img {
+
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+height: 10rem;
+width: 20rem;
+object-fit:cover;
+}
+
+.head2 {
+    transition: all 0.3s ease;
+}
+
+.head2:hover {
+    text-decoration: underline;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.head2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    background-color: #d19e1c;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f9f9f9;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom: #f9f9f9;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f77f00; /* Vibrant orange for the follow section */
+    font-size: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.icons i {
+    font-size: 40px;
+    color: #ffffff; /* White icons */
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.icons i:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    color: #ffcb69; /* Warm yellow on hover */
+}
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .search {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px auto; /* Center-align the search bar */
+    }
+
+    .hero-part {
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .hero-content {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .hero-search button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .container3 {
+        width: 90%; /* Adjust container width */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dish {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .dish-img {
+        width: 100%; /* Ensure image scales within container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .view-more a {
+        width: 80%;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .icons i {
+        font-size: 30px; /* Adjust icon size */
+        margin: 3px;
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+        font-size: 20px; /* Adjust header text size */
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .search {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .hero-content {
+        font-size: 16px;
+    }
+
+    .hero-search button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .dish-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .view-more a {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .icons i {
+        font-size: 25px;
+    }
+}
